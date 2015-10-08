@@ -5,9 +5,11 @@ MAINTAINER Angel Rodriguez  "angel@quantumobject.com"
 
 #add repository and update the container
 #Installation of nesesary package/software for this containers..
-RUN echo "deb http://archive.ubuntu.com/ubuntu $(lsb_release -sc)-backports main restricted " >> /etc/apt/sources.list
-RUN apt-get update && apt-get install -y -q openjdk-8-jdk \
+RUN echo "deb http://archive.ubuntu.com/ubuntu $(lsb_release -sc)-backports main restricted " >> /etc/apt/sources.list \
+    && apt-add-repository ppa:mosquitto-dev/mosquitto-ppa
+RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y -q openjdk-8-jdk \
                                         mysql-server \
+                                        mosquitto \
                     && apt-get clean \
                     && rm -rf /tmp/* /var/tmp/*  \
                     && rm -rf /var/lib/apt/lists/*
