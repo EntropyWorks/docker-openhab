@@ -28,11 +28,6 @@ RUN mkdir /etc/service/mysqld
 COPY mysqld.sh /etc/service/mysqld/run
 RUN chmod +x /etc/service/mysqld/run
 
-# to add apache2 deamon to runit
-RUN mkdir /etc/service/apache2
-COPY apache2.sh /etc/service/apache2/run
-RUN chmod +x /etc/service/apache2/run
-
 #pre-config scritp for different service that need to be run when container image is create 
 #maybe include additional software that need to be installed ... with some service running ... like example mysqld
 COPY pre-conf.sh /sbin/pre-conf
