@@ -20,3 +20,5 @@ rm openhab.zip openhabaddons.zip
  
 killall mysqld
 sleep 10s
+ 
+mv -f /mysql.cfg /opt/openhab/conf/services/mysql.cfg
