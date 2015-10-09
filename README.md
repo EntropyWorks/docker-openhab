@@ -1,3 +1,5 @@
+## This container still not ready for used , still trying to learn how this application work .. , if you have any knowledge about OpenHAB 2 and want to help me , please test it and let me know if something is missing on it or not working right.
+
 # docker-openhab
 Docker container for [OpenHAB 2][3]
 
