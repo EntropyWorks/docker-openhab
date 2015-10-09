@@ -14,7 +14,7 @@ To install docker in Ubuntu 14.04 use the commands:
 
  To install docker in other operating systems check [docker online documentation][4]
  
- ## Usage
+## Usage
 
 To run container use the command below:
 
