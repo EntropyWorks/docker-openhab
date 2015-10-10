@@ -9,6 +9,3 @@ rm README.TXT
 curl -o /opt/openhab/openhabaddons.zip -SL "https://bintray.com/artifact/download/openhab/bin/distribution-1.7.1-addons.zip"
 unzip openhabaddons.zip
 rm openhab.zip openhabaddons.zip
-
-
-mv -f /mysql.cfg /opt/openhab/conf/services/mysql.cfg
