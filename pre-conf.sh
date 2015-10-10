@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-/usr/bin/mysqld_safe &
+/sbin/setuser mysql /usr/bin/mysqld_safe &
 sleep 10s
 
 mkdir /opt/openhab
