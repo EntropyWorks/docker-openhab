@@ -17,7 +17,7 @@ mysqladmin -u root password mysqlpsswd
 mysqladmin -u root -pmysqlpsswd reload
 mysqladmin -u root -pmysqlpsswd create OpenHAB
 
-echo "grant select,insert,update,delete on OpenHAB.* to 'openhab'@localhost identified by 'openhabpasswd'; flush privileges; " | mysql -u root -pmysqlpsswd
+echo "grant select,insert,update,delete on OpenHAB.* to 'openhab'@127.0.0.1 identified by 'openhabpasswd'; flush privileges; " | mysql -u root -pmysqlpsswd
  
 killall mysqld
 sleep 10s
