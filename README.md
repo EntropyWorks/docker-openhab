@@ -1,5 +1,5 @@
 # docker-openhab
-Docker container for [OpenHAB 2][3]
+Docker container for [OpenHAB][3]
 
 "The next-generation open Home Automation Bus (openHAB):a vendor and technology agnostic open source automation software for your home.Build your smart home in no time!"
 
@@ -56,6 +56,6 @@ To help improve this container [quantumobject/docker-openhab][5]
 
 [1]:http://www.openhab.org/
 [2]:https://www.docker.com
-[3]:https://github.com/openhab/openhab2
+[3]:https://github.com/openhab/openhab
 [4]:http://docs.docker.com
 [5]:https://github.com/QuantumObject/docker-openhab
