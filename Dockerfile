@@ -8,7 +8,6 @@ MAINTAINER Angel Rodriguez  "angel@quantumobject.com"
 RUN echo "deb http://archive.ubuntu.com/ubuntu $(lsb_release -sc)-backports main restricted " >> /etc/apt/sources.list \
     && apt-add-repository ppa:mosquitto-dev/mosquitto-ppa
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y -q openjdk-8-jdk \
-                                        mysql-server \
                                         mosquitto \
                                         unzip \
                     && apt-get clean \
@@ -21,12 +20,6 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y -q openj
 RUN mkdir -p /etc/my_init.d
 COPY startup.sh /etc/my_init.d/startup.sh
 RUN chmod +x /etc/my_init.d/startup.sh
-
-##Adding Deamons to containers
-# to add mysqld deamon to runit
-RUN mkdir /etc/service/mysqld
-COPY mysqld.sh /etc/service/mysqld/run
-RUN chmod +x /etc/service/mysqld/run
 
 #pre-config scritp for different service that need to be run when container image is create 
 #maybe include additional software that need to be installed ... with some service running ... like example mysqld
