@@ -31,7 +31,19 @@ where when been ask for database need to replace localhost for db.
 
 Check port and point your browser to http://[ip]:xxxx/  to access and initially configure your OpenHAB 2.
 
-To access the container from the server that the container is running :
+## Run different version of OpenHab
+
+When you run quantumobject/docker-openhab it will used the last release openhab(at this moment 2.0.0alpha2) but you can specified by using tags.
+
+to run OpenHab 1.7.1 :
+
+    $ docker run -d -p xxxx:8080 --link some-mysql:db quantumobject/docker-openhab:1.7.1
+
+or to make sure you are running OpenHab 2.0.0alpha2
+
+ $ docker run -d -p xxxx:8080 --link some-mysql:db quantumobject/docker-openhab:2.0.0alpha2
+ 
+## To access the container from the server that the container is running :
 
     $ docker exec -it container_id /bin/bash
 
