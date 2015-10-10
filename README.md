@@ -50,7 +50,7 @@ or to make sure you are running OpenHab 2.0.0alpha2
 
 ## More Info
 
-About OpenHAB 2 [www.openhab.org][1]
+About OpenHAB [www.openhab.org][1]
 
 To help improve this container [quantumobject/docker-openhab][5]
 
