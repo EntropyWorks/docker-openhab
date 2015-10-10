@@ -41,7 +41,7 @@ to run OpenHab 1.7.1 :
 
 or to make sure you are running OpenHab 2.0.0alpha2
 
- $ docker run -d -p xxxx:8080 --link some-mysql:db quantumobject/docker-openhab:2.0.0alpha2
+    $ docker run -d -p xxxx:8080 --link some-mysql:db quantumobject/docker-openhab:2.0.0alpha2
  
 ## To access the container from the server that the container is running :
 
