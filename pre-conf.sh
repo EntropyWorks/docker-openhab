@@ -2,6 +2,7 @@
 set -e
 
 /usr/bin/mysqld_safe &
+sleep 10s
 
 mkdir /opt/openhab
 cd /opt/openhab
@@ -12,11 +13,11 @@ curl -o /opt/openhab/openhabaddons.zip -SL "https://bintray.com/artifact/downloa
 unzip openhabaddons.zip
 rm openhab.zip openhabaddons.zip
 
- mysqladmin -u root password mysqlpsswd
- mysqladmin -u root -pmysqlpsswd reload
- mysqladmin -u root -pmysqlpsswd create OpenHAB
+mysqladmin -u root password mysqlpsswd
+mysqladmin -u root -pmysqlpsswd reload
+mysqladmin -u root -pmysqlpsswd create OpenHAB
 
- echo "grant select,insert,update,delete on OpenHAB.* to 'openhab'@localhost identified by 'openhabpasswd'; flush privileges; " | mysql -u root -pmysqlpsswd
+echo "grant select,insert,update,delete on OpenHAB.* to 'openhab'@localhost identified by 'openhabpasswd'; flush privileges; " | mysql -u root -pmysqlpsswd
  
 killall mysqld
 sleep 10s
