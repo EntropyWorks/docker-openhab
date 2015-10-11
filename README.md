@@ -29,7 +29,7 @@ Them link to OpenHAB container:
 
 where when been ask for database need to replace localhost for db.
 
-Check port and point your browser to http://[ip]:xxxx/classicui/app?sitemap=demo  to access and check demoe configure of your OpenHAB 2.
+Check port and point your browser to _http://[ip]:xxxx/classicui/app?sitemap=demo_  to access and check demo configuration of your OpenHAB 2 and check _http://[ip]:xxxx/_ too . 
 
 ## Run different version of OpenHab
 
