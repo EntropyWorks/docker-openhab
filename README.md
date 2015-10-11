@@ -29,7 +29,7 @@ Them link to OpenHAB container:
 
 where when been ask for database need to replace localhost for db.
 
-Check port and point your browser to http://[ip]:xxxx/  to access and initially configure your OpenHAB 2.
+Check port and point your browser to http://[ip]:xxxx/openhab.app?sitemap=demo to access and initially configure your OpenHAB.
 
 ## Run different version of OpenHab
 
