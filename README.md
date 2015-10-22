@@ -16,7 +16,7 @@ To install docker in Ubuntu 14.04 use the commands:
  
 ## Usage
 
-## If you need a MySQL database you can link container :
+If you need a MySQL database you can link container :
 
     $ docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=mysecretpassword  -e MYSQL_DATABASE=OpenHAB \
     -e MYSQL_USER=openhab -e MYSQL_PASSWORD=openhabpasswd -d mysql
@@ -54,8 +54,11 @@ About OpenHAB [www.openhab.org][1]
 
 To help improve this container [quantumobject/docker-openhab][5]
 
+For additional info about us and our projects check our site [www.quantumobject.com][6]
+
 [1]:http://www.openhab.org/
 [2]:https://www.docker.com
 [3]:https://github.com/openhab/openhab
 [4]:http://docs.docker.com
 [5]:https://github.com/QuantumObject/docker-openhab
+[6]:http://www.quantumobject.com
